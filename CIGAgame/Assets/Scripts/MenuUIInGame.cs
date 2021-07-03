@@ -25,6 +25,7 @@ public class MenuUIInGame : MonoBehaviour
     }
     public void BackToMainMenu()
     {
+        SceneManager.LoadScene("StartMenu");
 
     }
     public void RePlay()
@@ -33,6 +34,18 @@ public class MenuUIInGame : MonoBehaviour
     }
     public void NextLeavel()
     {
+        string nextLevelName = SceneManager.GetActiveScene().name;
+        nextLevelName = nextLevelName.Replace(nextLevelName[nextLevelName.Length - 1], (char)(nextLevelName[nextLevelName.Length - 1] + 1));
+        if (SceneManager.GetSceneByName(nextLevelName) != null)
+        {
+            SceneManager.LoadScene(nextLevelName);
 
+        }
+        else
+        {
+
+            Debug.LogError("还没有对应的场景");
+
+        }
     }
 }
