@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuUIInGame : MonoBehaviour
 {
@@ -27,7 +29,7 @@ public class MenuUIInGame : MonoBehaviour
     }
     public void RePlay()
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void NextLeavel()
     {
