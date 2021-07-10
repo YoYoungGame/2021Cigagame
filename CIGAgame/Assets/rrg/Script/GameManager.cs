@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     }
     public void ChangePassengerNumber(int number)
     {
-        passengerNumber = number;
+        passengerNumber = passengerNumber+number;
     }
     public void TrainHealthPlus(int health)
     {
