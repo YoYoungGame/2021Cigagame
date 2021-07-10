@@ -210,6 +210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Railway (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8773552801416691718, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8773552801416691719, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -266,6 +270,10 @@ PrefabInstance:
     - target: {fileID: 8773552801416691716, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
       propertyPath: m_Name
       value: Railway (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773552801416691718, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8773552801416691719, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
       propertyPath: m_RootOrder
@@ -434,7 +442,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619345031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.42664, y: -0.22723997, z: -10}
+  m_LocalPosition: {x: 11.429373, y: -0.22723997, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1809150127}
@@ -451,6 +459,10 @@ PrefabInstance:
     - target: {fileID: 8773552801416691716, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
       propertyPath: m_Name
       value: Railway (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773552801416691718, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8773552801416691719, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
       propertyPath: m_RootOrder
@@ -576,7 +588,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013631352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.42664, y: -0.22723997, z: -10}
+  m_LocalPosition: {x: 11.429373, y: -0.22723997, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -736,6 +748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Railway (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8773552801416691718, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8773552801416691719, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -858,6 +874,10 @@ PrefabInstance:
     - target: {fileID: 8773552801416691716, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
       propertyPath: m_Name
       value: Railway (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773552801416691718, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8773552801416691719, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
       propertyPath: m_RootOrder
@@ -1009,7 +1029,7 @@ GameObject:
   - component: {fileID: 1925277615}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1027,6 +1047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   passengerNumber: 0
+  trainHealth: 0
 --- !u!4 &1925277616
 Transform:
   m_ObjectHideFlags: 0
@@ -1089,10 +1110,6 @@ PrefabInstance:
     - target: {fileID: 624333421322605105, guid: 8227d397c9088e44490617605dc965f6, type: 3}
       propertyPath: m_Name
       value: TrainStation
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018091934574719447, guid: 8227d397c9088e44490617605dc965f6, type: 3}
-      propertyPath: m_DynamicOccludee
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5016541287295041938, guid: 8227d397c9088e44490617605dc965f6, type: 3}
       propertyPath: m_RootOrder
@@ -1386,6 +1403,10 @@ PrefabInstance:
     - target: {fileID: 8773552801416691716, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
       propertyPath: m_Name
       value: Railway
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773552801416691718, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8773552801416691719, guid: b4c829fc1cc5be94dbd346fb5359967c, type: 3}
       propertyPath: m_RootOrder

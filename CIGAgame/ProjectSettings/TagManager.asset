@@ -10,6 +10,8 @@ TagManager:
   - Train
   - WallX
   - WallY
+  - CheckArea
+  - GameManager
   layers:
   - Default
   - TransparentFX

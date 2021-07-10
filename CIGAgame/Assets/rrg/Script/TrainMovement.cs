@@ -10,6 +10,7 @@ public class TrainMovement : MonoBehaviour
     public Vector2 fowardDirection;
     public Vector2 circleDirection;
 
+    private float angleSpeed;
     private bool moveAround;
     private Vector2 fowardDirectionBefore;
     private float Clockwise;
@@ -28,11 +29,13 @@ public class TrainMovement : MonoBehaviour
             moveAround = false;
         }
 
-        if (moveAround) { 
-            transform.RotateAround(railway.transform.position, new Vector3(0, 0, -1* Clockwise), trainSpeed *20* Time.deltaTime);
-
+        if (moveAround) {
             circleDirection = (Vector2)railway.transform.position - (Vector2)transform.position;
             fowardDirection = Vector2.Perpendicular(circleDirection) * Clockwise;
+
+            angleSpeed = trainSpeed * 360 / (2f*3.14f* circleDirection.magnitude);
+            transform.RotateAround(railway.transform.position, new Vector3(0, 0, -1* Clockwise), angleSpeed * Time.deltaTime);
+
             Debug.DrawRay(transform.position, circleDirection, Color.red);
             Debug.DrawRay(transform.position, fowardDirection, Color.cyan);
             Debug.DrawRay(transform.position, fowardDirectionBefore, Color.green);
@@ -48,9 +51,9 @@ public class TrainMovement : MonoBehaviour
         fowardDirectionBefore = fowardDirection;
 
         Vector2 circleDirectionTemp = (Vector2)railway.transform.position - (Vector2)transform.position;
-        Vector2 fowardDirectionTemp = Vector2.Perpendicular(circleDirection);
+        Vector2 fowardDirectionTemp = Vector2.Perpendicular(circleDirectionTemp);
 
-        float angle = Mathf.Abs(Vector3.Angle(fowardDirectionBefore, fowardDirection));
+        float angle = Mathf.Abs(Vector3.Angle(fowardDirectionBefore, fowardDirectionTemp));
         if (angle > 90)
         {
             Clockwise = -1;
@@ -65,9 +68,17 @@ public class TrainMovement : MonoBehaviour
         if (collision.gameObject.tag.Equals("WallX"))
         {
             fowardDirection = new Vector2(fowardDirection.x, -1*fowardDirection.y);
+            GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().TrainHealthMinus(1);
         } else if(collision.gameObject.tag.Equals("WallY"))
         {
             fowardDirection = new Vector2(-1 * fowardDirection.x, fowardDirection.y);
+            GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().TrainHealthMinus(1);
+        }
+
+        if (collision.gameObject.tag.Equals("CheckArea"))
+        {
+            Vector2 circleDirectionTemp = (Vector2)collision.gameObject.GetComponentInParent<Transform>().position - (Vector2)transform.position;
+            fowardDirection = (circleDirectionTemp + fowardDirection) / 2;
         }
     }
 }
