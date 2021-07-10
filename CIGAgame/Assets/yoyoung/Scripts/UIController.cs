@@ -8,12 +8,17 @@ public class UIController : MonoBehaviour
     public GameObject GameStoreUI;
     public GameObject GameInformationUI;
     public GameObject PauseUI;
+    public GameObject GameWinUI;
     public Text moneyTxt;
     public Text scoreTxt;
+    public Text stationname;
     public Image[] LifeUI = new Image[10];
     public Sprite FullLife, EmptyLife;
 
+    private void Start()
+    {
 
+    }
 
 
 
@@ -45,8 +50,19 @@ public class UIController : MonoBehaviour
             }
         }
     }
-
-
+    public void GameWinUICtr(string name)//调用以显示到达车站的UI，并在3秒后自动消失
+    {
+        GameWinUI.SetActive(true);
+        stationname.text = "恭喜你到达了" + name + "车站";
+        StartCoroutine(CountDown());
+    }
+    IEnumerator CountDown()
+    {
+        yield return new WaitForSeconds(3f);
+        GameWinUI.SetActive(false);
+        StopAllCoroutines();
+        
+    }
 
 
 

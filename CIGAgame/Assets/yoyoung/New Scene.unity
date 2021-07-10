@@ -2709,7 +2709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4373,11 +4373,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acf5e19d805fcdf40a63257bfc696c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameStoreUI: {fileID: 0}
+  GameStoreUI: {fileID: 455364799}
   GameInformationUI: {fileID: 2141829061}
   PauseUI: {fileID: 1323930099}
+  GameWinUI: {fileID: 1171403913}
   moneyTxt: {fileID: 832541680}
-  scoreTxt: {fileID: 0}
+  scoreTxt: {fileID: 279938813}
+  stationname: {fileID: 1676987173}
   LifeUI:
   - {fileID: 1907948517}
   - {fileID: 417136932}
