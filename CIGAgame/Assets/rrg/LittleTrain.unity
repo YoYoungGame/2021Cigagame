@@ -556,7 +556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619345031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.432288, y: -0.22723997, z: -10}
+  m_LocalPosition: {x: 11.423582, y: -0.22724092, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1809150127}
@@ -702,7 +702,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013631352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.432288, y: -0.22723997, z: -10}
+  m_LocalPosition: {x: 11.423582, y: -0.22724092, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1099,12 +1099,12 @@ MonoBehaviour:
   m_ScreenX: 0.194
   m_ScreenY: 0.571
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.22
-  m_DeadZoneHeight: 0.966
+  m_DeadZoneWidth: 0.275
+  m_DeadZoneHeight: 1.115
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 1.107
+  m_SoftZoneHeight: 1.115
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -1554,6 +1554,10 @@ PrefabInstance:
       propertyPath: railway
       value: 
       objectReference: {fileID: 1551637208}
+    - target: {fileID: 6422566282694604945, guid: 3500311b48a247140890a9ca9ae3a429, type: 3}
+      propertyPath: trainSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6422566282694604958, guid: 3500311b48a247140890a9ca9ae3a429, type: 3}
       propertyPath: m_Name
       value: Locomotive

@@ -41,7 +41,7 @@ public class TrainMovement : MonoBehaviour
             Debug.DrawRay(transform.position, fowardDirectionBefore, Color.green);
         }
         else {
-            transform.Translate(fowardDirection * trainSpeed * Time.deltaTime, Space.World);
+            transform.Translate(fowardDirection.normalized * trainSpeed * Time.deltaTime, Space.World);
         }
     }
     public void ChangeRailway(GameObject collision)
