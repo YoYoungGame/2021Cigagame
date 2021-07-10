@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Level_1.unity
+=======
+- path: Assets/rrg/LittleTrain.unity
+>>>>>>> ed3011f14d6c096a486af0c89b7b907234675209
   isLoaded: 1
   isActive: 1
   isSubScene: 0
