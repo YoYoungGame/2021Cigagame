@@ -17,6 +17,7 @@ Logs/AssetImportWorker0.log
 -srvPort
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 50667
 Successfully changed project path to: D:/game developer/2021Cigagame/CIGAgame
@@ -30,6 +31,13 @@ E:/GitDeskTop/CIGAgame/2021Cigagame/CIGAgame
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 100.60 ms, found 3 plugins.
 >>>>>>> upstream/master
+=======
+51672
+Successfully changed project path to: D:/game developer/2021Cigagame/CIGAgame
+D:/game developer/2021Cigagame/CIGAgame
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 41.35 ms, found 3 plugins.
+>>>>>>> Stashed changes
 =======
 51672
 Successfully changed project path to: D:/game developer/2021Cigagame/CIGAgame
@@ -66,6 +74,7 @@ Registering precompiled unity dll's ...
 Register platform support module: D:/game developer/Unity/2020.3.10f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Registered in 0.000945 seconds.
 Native extension for WindowsStandalone target not found
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 41.41 ms, found 3 plugins.
@@ -106,6 +115,15 @@ Platform modules already initialized, skipping
 Registering precompiled user dll's ...
 Registered in 0.003347 seconds.
 >>>>>>> Stashed changes
+=======
+Refreshing native plugins compatible for Editor in 44.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.712 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003347 seconds.
+>>>>>>> Stashed changes
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 46.10 ms, found 3 plugins.
@@ -127,6 +145,7 @@ Total: 2.239600 ms (FindLiveObjects: 0.267200 ms CreateObjectMapping: 0.097800 m
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
   path: Assets/rrg/Passenger.png
@@ -267,6 +286,8 @@ Total: 3.955200 ms (FindLiveObjects: 0.219800 ms CreateObjectMapping: 0.092100 m
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
   path: Assets/rrg/Script/GameManager.cs
   artifactKey: Guid(8394b83622bf71c468a2d41c16cbe862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/rrg/Script/GameManager.cs using Guid(8394b83622bf71c468a2d41c16cbe862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edb6a3333e96ab761edf80a262cb32ae') in 0.049972 seconds
@@ -288,6 +309,9 @@ Received Import Request.
 Start importing Assets/rrg/Script/GameManage_oldr.cs using Guid(8394b83622bf71c468a2d41c16cbe862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24373c4c7d9a5a69efdd75af8ebc285a') in 0.001996 seconds
   Import took 0.007882 seconds .
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -295,6 +319,7 @@ Start importing Assets/rrg/Script/GameManage_oldr.cs using Guid(8394b83622bf71c4
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Registered in 0.004588 seconds.
@@ -324,6 +349,8 @@ Start importing Assets/LS/Prefabs/TrainStation.prefab using Guid(80fded0ff18fb3a
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 Registered in 0.002568 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -341,6 +368,9 @@ System memory in use after: 99.9 MB.
 Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2680.
 Total: 3.600800 ms (FindLiveObjects: 0.197000 ms CreateObjectMapping: 0.079800 ms MarkObjects: 3.298300 ms  DeleteObjects: 0.024600 ms)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -348,6 +378,7 @@ Total: 3.600800 ms (FindLiveObjects: 0.197000 ms CreateObjectMapping: 0.079800 m
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Registered in 0.005420 seconds.
@@ -377,6 +408,8 @@ Start importing Assets/LS/Prefabs/TrainStation.prefab using Guid(80fded0ff18fb3a
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 Registered in 0.003629 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -394,6 +427,9 @@ System memory in use after: 100.0 MB.
 Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2684.
 Total: 2.321400 ms (FindLiveObjects: 0.312600 ms CreateObjectMapping: 0.102500 ms MarkObjects: 1.883800 ms  DeleteObjects: 0.021300 ms)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -401,6 +437,7 @@ Total: 2.321400 ms (FindLiveObjects: 0.312600 ms CreateObjectMapping: 0.102500 m
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Registered in 0.004619 seconds.
@@ -422,6 +459,8 @@ Total: 2.723400 ms (FindLiveObjects: 0.250100 ms CreateObjectMapping: 0.112700 m
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 Registered in 0.002553 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -439,6 +478,9 @@ System memory in use after: 100.0 MB.
 Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2688.
 Total: 1.878600 ms (FindLiveObjects: 0.211600 ms CreateObjectMapping: 0.083400 ms MarkObjects: 1.568800 ms  DeleteObjects: 0.013900 ms)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -446,6 +488,7 @@ Total: 1.878600 ms (FindLiveObjects: 0.211600 ms CreateObjectMapping: 0.083400 m
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Registered in 0.007292 seconds.
@@ -467,6 +510,8 @@ Total: 4.808800 ms (FindLiveObjects: 0.392000 ms CreateObjectMapping: 0.152000 m
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 Registered in 0.002454 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -484,6 +529,9 @@ System memory in use after: 100.0 MB.
 Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2692.
 Total: 1.866600 ms (FindLiveObjects: 0.201100 ms CreateObjectMapping: 0.074400 ms MarkObjects: 1.576700 ms  DeleteObjects: 0.013600 ms)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -491,6 +539,7 @@ Total: 1.866600 ms (FindLiveObjects: 0.201100 ms CreateObjectMapping: 0.074400 m
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Registered in 0.006086 seconds.
@@ -513,6 +562,8 @@ Total: 3.361100 ms (FindLiveObjects: 0.401500 ms CreateObjectMapping: 0.257000 m
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 Registered in 0.002692 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -530,6 +581,9 @@ System memory in use after: 99.9 MB.
 Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2696.
 Total: 1.880100 ms (FindLiveObjects: 0.208500 ms CreateObjectMapping: 0.081700 ms MarkObjects: 1.575400 ms  DeleteObjects: 0.013800 ms)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
