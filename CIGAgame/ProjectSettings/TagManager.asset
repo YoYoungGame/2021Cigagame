@@ -6,6 +6,10 @@ TagManager:
   tags:
   - MenuUI
   - Goal
+  - Railway
+  - Train
+  - WallX
+  - WallY
   layers:
   - Default
   - TransparentFX
