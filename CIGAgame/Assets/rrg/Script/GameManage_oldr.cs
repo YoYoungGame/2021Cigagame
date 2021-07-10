@@ -1,73 +1,27 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
-
-    private void Awake()
-    {
-        Instance = this;
-
-    }
-
     public int passengerNumber;
-    public int m_CurrentMoneyNum = 0;
-    public int m_CurrentHeart = 1;
+    public int trainHealth;
 
-
-
+    private void Start()
+    {
+        passengerNumber = 0;
+        trainHealth = 3;
+    }
     public void ChangePassengerNumber(int number)
     {
-        passengerNumber = number;
+        passengerNumber = passengerNumber+number;
     }
-
-
-    public int MeetTrainStation()
+    public void TrainHealthPlus(int health)
     {
-        int returnNum = passengerNumber;
-        passengerNumber = 0;
-        return returnNum;
-
+        trainHealth = trainHealth+health;
     }
-
-
-    public void AddMoreMoney( int num)
+    public void TrainHealthMinus(int health)
     {
-        m_CurrentMoneyNum += num;
+        trainHealth = trainHealth - health;
     }
-
-    public bool CostMoney(int num)
-    {
-        if(num <= m_CurrentMoneyNum)
-        {
-            m_CurrentMoneyNum -= num;
-            return true;
-
-        }
-        else
-        {
-            return false;
-        }
-    }
-
-
-    /// <summary>
-    /// 增加车厢的方法。
-    /// </summary>
-    public void  AddCarriage()
-    {
-        Debug.Log("增加 了个新的车厢");
-    }
-
-    /// <summary>
-    /// 增加血量的方法
-    /// </summary>
-    public void AddHeart()
-    {
-        m_CurrentHeart += 1;
-    }
-
 }
