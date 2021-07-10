@@ -5,13 +5,12 @@ using UnityEngine;
 public class TrainStation : MonoBehaviour
 {
 
-    public GameManager m_GameManager;
+
 
     public GameObject m_StoreUI;
 
     private void Awake()
     {
-        m_GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         m_StoreUI = transform.GetChild(0).gameObject;
     }
 
@@ -35,7 +34,7 @@ public class TrainStation : MonoBehaviour
 
     public void GameLevelWin()
     {
-        m_GameManager.AddMoreMoney(m_GameManager.MeetTrainStation() * m_MoneyRatio);
+        GameManager.Instance.AddMoreMoney(GameManager.Instance.MeetTrainStation() * m_MoneyRatio);
     }
 
 
@@ -62,14 +61,37 @@ public class TrainStation : MonoBehaviour
         m_StoreUI.SetActive(false);
     }
 
+    public int m_CarriageCost = 100;
+    public int m_heartCost= 100;
+
+
     public void BuyCarriage()
     {
-        
+        if (GameManager.Instance.CostMoney(m_CarriageCost))
+        {
+            GameManager.Instance.AddCarriage();
+            Debug.Log("购买了个火车车厢");
+        }
+        else
+        {
+            Debug.Log("没钱");
+
+        }
     }
 
     public void BuyHeart()
     {
-        
+        if (GameManager.Instance.CostMoney(m_CarriageCost))
+        {
+            GameManager.Instance.AddHeart();
+            Debug.Log("购买了个一条命");
+
+        }
+        else
+        {
+            Debug.Log("没钱");
+
+        }
     }
 
 
