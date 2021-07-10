@@ -8,7 +8,7 @@ public class Passenger : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Train"))
         {
-            GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().ChangePassengerNumber(1);
+            GameManager.Instance.ChangePassengerNumber(1);
             Destroy(gameObject);
         }
     }

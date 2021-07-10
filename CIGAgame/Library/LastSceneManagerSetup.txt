@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/LS/Scene/GameScene.unity
+- path: Assets/rrg/LittleTrain.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

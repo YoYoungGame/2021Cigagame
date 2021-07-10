@@ -68,11 +68,11 @@ public class TrainMovement : MonoBehaviour
         if (collision.gameObject.tag.Equals("WallX"))
         {
             fowardDirection = new Vector2(fowardDirection.x, -1*fowardDirection.y);
-            GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().TrainHealthMinus(1);
+            GameManager.Instance.CutHeart();
         } else if(collision.gameObject.tag.Equals("WallY"))
         {
             fowardDirection = new Vector2(-1 * fowardDirection.x, fowardDirection.y);
-            GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().TrainHealthMinus(1);
+            GameManager.Instance.CutHeart();
         }
 
         if (collision.gameObject.tag.Equals("CheckArea"))
